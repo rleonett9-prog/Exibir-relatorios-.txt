@@ -1,7 +1,7 @@
 #include <stdio.h> // Para entrada e saída padrão
 #include <stdlib.h> // Para funções de alocação de memória
 #include <string.h> // Para manipulação de strings
-#include <locale.h> // Para configuração de locale
+#include <locale.h> // Para configuração de locale 
 #include <windows.h> // Para funções específicas do Windows
 #include <ctype.h> // Para funções de manipulação de caracteres 
 
@@ -62,7 +62,7 @@ void pausar() { // Função para pausar o programa e esperar o usuário pression
     getchar(); // Espera o ENTER
 } 
 
-// --- FUNÇÃO ATUALIZADA COM DIAGNÓSTICO ---
+// Função para exibir o relatório de uma disciplina
 void exibir_relatorio(const char *arquivo, const char *disciplina) { // Função para exibir o relatório de uma disciplina
     char caminho[256]; // Caminho completo do arquivo
     snprintf(caminho, sizeof(caminho), "%s/%s", PASTA, arquivo); // Monta o caminho completo do arquivo
